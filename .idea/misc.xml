@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2275" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_admin_add_labour.xml" value="0.2001763668430335" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_admin_add_labour_page.xml" value="0.8355263157894737" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_admin_add_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_admin_dashboard2.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_admin_delete_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_admin_update_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_labour_dashboard_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_labour_personal_info_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_labour_update_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_landloard_add_or_delete_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_landloard_personal_info_page.xml" value="0.2" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_landlord_dashboard.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_landlord_search_page.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/activity_main.xml" value="0.23007246376811594" />
+        <entry key="..\:/Pr@deep/Projects/LabourManagement/app/src/main/res/layout/landlord_search_page_pattern.xml" value="0.23007246376811594" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
