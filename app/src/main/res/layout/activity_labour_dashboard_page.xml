@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/labour_review"
+        android:id="@+id/labour_job_available"
         android:layout_width="175dp"
         android:layout_height="198dp"
         android:background="#FFFFFF"
@@ -46,7 +46,7 @@
         <TextView
             android:layout_width="108dp"
             android:layout_height="30dp"
-            android:text="Review"
+            android:text="Jobs available"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
@@ -93,7 +93,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/labour_job_alert"
+        android:id="@+id/admin_view_info"
         android:layout_width="175dp"
         android:layout_height="198dp"
         android:background="#FFFFFF"

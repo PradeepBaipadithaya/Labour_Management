@@ -36,12 +36,16 @@ public class admin_delete_page extends AppCompatActivity {
                 }
                 else{
                     try{
-                        admin_add_handler.delete_member(username_typed);
-                        Toast.makeText(admin_delete_page.this, "Information deleted from database", Toast.LENGTH_SHORT).show();
-                        username.setText("");
-                        password.setText("");
+                        long result =admin_add_handler.delete_member(username_typed);
+                        if(result!=0) {
+                            Toast.makeText(admin_delete_page.this, "Information deleted from database", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
+                        else{
+                            Toast.makeText(admin_delete_page.this, "No data found", Toast.LENGTH_SHORT).show();
+                        }
                     } catch (Exception e) {
-                        Toast.makeText(admin_delete_page.this, "No data found", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(admin_delete_page.this, "Some error occured", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

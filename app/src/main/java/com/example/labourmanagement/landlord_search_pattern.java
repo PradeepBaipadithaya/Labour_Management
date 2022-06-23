@@ -1,7 +1,9 @@
 package com.example.labourmanagement;
 
 
-public class landlord_search_pattern {
+import java.util.ArrayList;
+
+public class landlord_search_pattern extends ArrayList<landlord_search_pattern> {
     int image;
     String name;
     String work;

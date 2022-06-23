@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".landloard_add_or_delete_page">
+    tools:context=".landloard_view_attendance_first_page">
 
     <TextView
         android:id="@+id/landloard_add_or_delete"
@@ -19,12 +19,11 @@
         app:layout_constraintVertical_bias="0.384" />
 
     <EditText
-        android:id="@+id/landloard_add_delete_plain_text"
+        android:id="@+id/landlord_view_atten_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
@@ -33,10 +32,10 @@
         app:layout_constraintVertical_bias="0.389" />
 
     <Button
-        android:id="@+id/labour_delete_button"
+        android:id="@+id/landlord_view_aten_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete"
+        android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
@@ -45,10 +44,10 @@
         app:layout_constraintVertical_bias="0.612" />
 
     <Button
-        android:id="@+id/labour_add_button2"
+        android:id="@+id/landlord_view_atten_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
+        android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.753"

@@ -13,10 +13,10 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class custom_adapter extends ArrayAdapter<landlord_search_pattern>{
+public class custom_adapter_labour_job_alert  extends ArrayAdapter<labour_job_alert_pattern> {
     public Context mContext;
     public int mResource;
-    public custom_adapter(@NonNull Context context, int resource, @NonNull ArrayList<landlord_search_pattern> objects) {
+    public custom_adapter_labour_job_alert(@NonNull Context context, int resource, @NonNull ArrayList<labour_job_alert_pattern> objects) {
         super(context, resource, objects);
         this.mContext = context;
         this.mResource = resource;
@@ -34,11 +34,10 @@ public class custom_adapter extends ArrayAdapter<landlord_search_pattern>{
         TextView textView_phone = convertView.findViewById(R.id.admin_view_info_role);
 
         imageView.setImageResource(getItem(position).getImage());
-        textView_name.setText(getItem(position).getName());
-        textView_work.setText(getItem(position).getWork());
-        textView_phone.setText(getItem(position).getPhone_num());
+        textView_name.setText(getItem(position).getLandlord_id());
+        textView_work.setText(getItem(position).getDate());
+        textView_phone.setText(getItem(position).getReason());
 
         return convertView;
     }
-
 }

@@ -10,7 +10,7 @@ import android.view.View;
 public class admin_dashboard extends AppCompatActivity {
     ConstraintLayout add_landlord;
     ConstraintLayout add_labour;
-    ConstraintLayout update;
+    ConstraintLayout view_detail;
     ConstraintLayout delete;
 
     @Override
@@ -18,9 +18,9 @@ public class admin_dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_dashboard2);
         add_landlord = findViewById(R.id.add_landloard);
-        add_labour = findViewById(R.id.labour_update);
-        update = findViewById(R.id.labour_job_alert);
-        delete = findViewById(R.id.labour_review);
+        add_labour = findViewById(R.id.add_labour);
+        view_detail = findViewById(R.id.admin_view_info);
+        delete = findViewById(R.id.admin_delete);
 
         add_landlord.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,26 +30,27 @@ public class admin_dashboard extends AppCompatActivity {
             }
         });
 
-        add_labour.setOnClickListener(new View.OnClickListener() {
+        view_detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(admin_dashboard.this, admin_add_page.class);
+                Intent intent = new Intent(admin_dashboard.this, admin_view_info_page.class);
                 startActivity(intent);
             }
         });
 
-        update.setOnClickListener(new View.OnClickListener() {
+        add_labour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(admin_dashboard.this, admin_update_page.class);
+                Intent intent = new Intent(admin_dashboard.this,admin_add_labour_page.class);
                 startActivity(intent);
             }
         });
+
 
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(admin_dashboard.this, admin_update_page.class);
+                Intent intent = new Intent(admin_dashboard.this, admin_delete_page.class);
                 startActivity(intent);
             }
         });

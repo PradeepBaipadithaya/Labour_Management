@@ -9,34 +9,46 @@ import android.view.View;
 
 public class landlord_dashboard extends AppCompatActivity {
     ConstraintLayout personal_info;
-    ConstraintLayout add_delete_labour;
+    ConstraintLayout notify_labour;
     ConstraintLayout search;
     ConstraintLayout take_attendance;
     ConstraintLayout view_attendance;
-    ConstraintLayout yearly_expenditure;
+    ConstraintLayout update;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landlord_dashboard);
         personal_info = findViewById(R.id.landlord_pinfo);
-        add_delete_labour = findViewById(R.id.landlord_add_delete_labour);
+        notify_labour = findViewById(R.id.landlord_notify);
         search = findViewById(R.id.landlord_search);
         take_attendance = findViewById(R.id.landlord_take_attendance);
         view_attendance = findViewById(R.id.landlord_view_attendance);
-        yearly_expenditure = findViewById(R.id.landlord_yearly_expenditure);
+        update = findViewById(R.id.landlord_update);
+        String username = getIntent().getStringExtra("username");
 
         personal_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(landlord_dashboard.this, landloard_personal_info_page.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
 
-        add_delete_labour.setOnClickListener(new View.OnClickListener() {
+        update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(landlord_dashboard.this, landloard_add_or_delete_page.class);
+                Intent intent = new Intent(landlord_dashboard.this, landlord_update_page.class);
+                intent.putExtra("username",username);
+                startActivity(intent);
+            }
+        });
+
+        view_attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(landlord_dashboard.this, landloard_view_attendance_first_page.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
@@ -45,6 +57,24 @@ public class landlord_dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(landlord_dashboard.this, landlord_search_page.class);
+                startActivity(intent);
+            }
+        });
+
+        take_attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(landlord_dashboard.this, landlord_take_attendance_page.class);
+                intent.putExtra("username",username);
+                startActivity(intent);
+            }
+        });
+
+        notify_labour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(landlord_dashboard.this, landlord_notify_page.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });

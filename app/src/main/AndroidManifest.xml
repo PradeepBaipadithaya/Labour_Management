@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.labourmanagement" >
+    package="com.example.labourmanagement">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LabourManagement" >
+        android:theme="@style/Theme.LabourManagement">
+        <activity
+            android:name=".admin_view_info_page"
+            android:exported="false" />
+        <activity
+            android:name=".labour_jobs_available_page"
+            android:exported="false" />
+        <activity
+            android:name=".labour_job_alert_page"
+            android:exported="false" />
+        <activity
+            android:name=".landlord_notify_page"
+            android:exported="false" />
+        <activity
+            android:name=".landloard_view_attendance_second_page"
+            android:exported="false" />
+        <activity
+            android:name=".landlord_take_attendance_page"
+            android:exported="false" />
+        <activity
+            android:name=".admin_add_labour_page"
+            android:exported="false" />
+        <activity
+            android:name=".landlord_update_page"
+            android:exported="false" />
         <activity
             android:name=".admin_delete_page"
             android:exported="false" />
@@ -25,7 +49,7 @@
             android:name=".labour_dashboard_page"
             android:exported="false" />
         <activity
-            android:name=".landloard_add_or_delete_page"
+            android:name=".landloard_view_attendance_first_page"
             android:exported="false" />
         <activity
             android:name=".landloard_personal_info_page"
@@ -41,7 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

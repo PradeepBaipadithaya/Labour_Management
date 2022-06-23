@@ -44,14 +44,17 @@ public class MainActivity extends AppCompatActivity {
                         role[0] = login_handler_cursor.getString(2);
 
                         if (password_typed.equals(password_recevied[0])) {
-                            if (role[0].equals("a")) {
+                            if (role[0].equals("Admin")) {
                                 Intent intent = new Intent(MainActivity.this, admin_dashboard.class);
+                                intent.putExtra("username",username_typed);
                                 startActivity(intent);
-                            } else if (role[0].equals("ll")) {
+                            } else if (role[0].equals("Landlord")) {
                                 Intent intent = new Intent(MainActivity.this, landlord_dashboard.class);
+                                intent.putExtra("username",username_typed);
                                 startActivity(intent);
-                            } else if (role[0].equals("l")) {
+                            } else if (role[0].equals("Labour")) {
                                 Intent intent = new Intent(MainActivity.this, labour_dashboard_page.class);
+                                intent.putExtra("username",username_typed);
                                 startActivity(intent);
                             }
                         } else {

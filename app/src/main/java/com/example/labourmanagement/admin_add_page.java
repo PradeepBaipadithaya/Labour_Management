@@ -37,12 +37,16 @@ public class admin_add_page extends AppCompatActivity {
                 }
                 else{
                     try{
-                        admin_add_handler.add_landlord(username_typed,password_typed);
-                        Toast.makeText(admin_add_page.this, "Information added to database", Toast.LENGTH_SHORT).show();
-                        username.setText("");
-                        password.setText("");
+                        long result = admin_add_handler.add_landlord(username_typed,password_typed);
+                        if(result!=-1) {
+                            Toast.makeText(admin_add_page.this, "Information added to database", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
+                        else{
+                            Toast.makeText(admin_add_page.this, "Username already found", Toast.LENGTH_SHORT).show();
+                        }
                     } catch (Exception e) {
-                        Toast.makeText(admin_add_page.this, "Username already found", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(admin_add_page.this, "Some error occurred", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

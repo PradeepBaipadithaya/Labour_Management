@@ -7,43 +7,6 @@
     tools:context=".admin_dashboard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/landlord_yearly_expenditure"
-        android:layout_width="160dp"
-        android:layout_height="161dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#72B3E4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905">
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="90dp"
-            android:layout_height="70dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.273"
-            app:srcCompat="@drawable/ic_launcher_background" />
-
-        <TextView
-            android:layout_width="108dp"
-            android:layout_height="30dp"
-            android:text="Yearly expenditure"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.827" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/landlord_take_attendance"
         android:layout_width="160dp"
         android:layout_height="161dp"
@@ -54,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564">
+        app:layout_constraintVertical_bias="0.905">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -125,10 +88,10 @@
         android:backgroundTint="#72B3E4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564">
+        app:layout_constraintVertical_bias="0.554">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -155,17 +118,17 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/landlord_add_delete_labour"
+        android:id="@+id/landlord_notify"
         android:layout_width="160dp"
         android:layout_height="161dp"
         android:background="#FFFFFF"
         android:backgroundTint="#72B3E4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214">
+        app:layout_constraintVertical_bias="0.554">
 
         <ImageView
             android:id="@+id/imageView"
@@ -182,7 +145,7 @@
         <TextView
             android:layout_width="108dp"
             android:layout_height="30dp"
-            android:text="Add/Delete labour"
+            android:text="Notify labour"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
@@ -226,6 +189,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.827" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -239,4 +203,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.061" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/landlord_update"
+        android:layout_width="160dp"
+        android:layout_height="161dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#72B3E4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.273"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="30dp"
+            android:text="Update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.827" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

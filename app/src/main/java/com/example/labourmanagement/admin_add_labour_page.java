@@ -1,12 +1,12 @@
 package com.example.labourmanagement;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class admin_add_labour_page extends AppCompatActivity {
     EditText username;
@@ -17,14 +17,13 @@ public class admin_add_labour_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_add_page);
+        setContentView(R.layout.activity_admin_add_labour_page);
         username = findViewById(R.id.admin_add_labour_username_entry);
         password = findViewById(R.id.admin_add_labour_password_entry);
         add = findViewById(R.id.admin_add_labour_add_button);
         cancel = findViewById(R.id.admin_add_labour_cancel_button);
 
         database_handler admin_add_handler = new database_handler(this, "labour_management.db",null,1);
-
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,12 +35,16 @@ public class admin_add_labour_page extends AppCompatActivity {
                 }
                 else{
                     try{
-                        admin_add_handler.add_labour(username_typed,password_typed);
-                        Toast.makeText(admin_add_labour_page.this, "Information added to database", Toast.LENGTH_SHORT).show();
-                        username.setText("");
-                        password.setText("");
+                        long result =admin_add_handler.add_labour(username_typed,password_typed);
+                        if(result!=-1) {
+                            Toast.makeText(admin_add_labour_page.this, "Information added to database", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
+                        else{
+                            Toast.makeText(admin_add_labour_page.this, "Username already found", Toast.LENGTH_SHORT).show();
+                        }
                     } catch (Exception e) {
-                        Toast.makeText(admin_add_labour_page.this, "Username already found", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(admin_add_labour_page.this, "Some error occurred", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -53,7 +56,8 @@ public class admin_add_labour_page extends AppCompatActivity {
                 password.setText("");
             }
         });
-
     }
 }
+
+
 
